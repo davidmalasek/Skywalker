@@ -1,5 +1,30 @@
+/*
+Skywalker by David Malášek
+Licensed under the MIT License.
+
+Inter font by Rasmus Andersson
+Licensed under the Open Font License.
+*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
-/*Inter font licensed under the Open Font License.*/
+/* prettier-ignore */
+/*
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,hr,p,
+blockquote,pre,a,abbr,acronym,address,big,button,cite,code,del,dfn,
+em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,
+b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,embed,figure,figcaption,footer,header,hgroup,menu,nav,
+output,ruby,section,summary,time,mark,audio,video {
+	margin-block-start: 0;
+    margin-block-end: 0;
+	margin: 0;
+    padding: 0;
+    outline: 0;
+	border: 0;
+    vertical-align: baseline;
+}
+*/
+
 :root {
 	--background: #ffffff;
 	--element-background: #333333;
@@ -13,79 +38,127 @@
 	color: var(--text-color);
 }
 
-/* prettier-ignore */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,hr,p,
-blockquote,pre,a,abbr,acronym,address,big,button,cite,code,del,dfn,
-em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,
-b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
-details,embed,figure,figcaption,footer,header,hgroup,menu,nav,
-output,ruby,section,summary,time,mark,audio,video {
-	margin-block-start: 0;
-    margin-block-end: 0;
-	margin: 0;
-    padding: 0;
-    outline: 0;
-	border: 0;
-    vertical-align: baseline;
-}
-
 /*---OPTIONS---*/
+.h-s::-webkit-scrollbar,
 .hide-sb::-webkit-scrollbar,
 .hide-scrollbar::-webkit-scrollbar {
 	display: none;
 }
 
 /*---DISPLAY PROPERTIES---*/
+.f,
 .flex {
 	display: flex;
-	align-items: center;
+}
+.b,
+.block {
+	display: block;
+}
+.i,
+.inline-block {
+	display: inline-block;
+}
+.n,
+.none {
+	display: none;
 }
 
 /*---FLEX DIRECTIONS---*/
-.row {
+.row,
+.r {
 	flex-direction: row;
 }
+.c,
 .col,
 .column {
 	flex-direction: column;
 }
+.w,
+.wrap {
+	flex-wrap: wrap;
+}
+.nw,
+.nowrap {
+	flex-wrap: nowrap;
+}
 
 /*---ALIGN---*/
-.flex-c,
+.j-c,
+.justify-c,
 .justify-center {
 	justify-content: center;
 }
-.flex-b,
+.j-b,
+.justify-b,
 .justify-between {
 	justify-content: space-between;
 }
-.flex-a,
+.j-a,
+.justify-a,
 .justify-around {
 	justify-content: space-around;
 }
-.margin-auto-lr {
+.a-s,
+.align-start,
+.align-s {
+	align-items: flex-start;
+}
+.a-e,
+.align-end,
+.align-e {
+	align-items: flex-end;
+}
+.a-c,
+.align-center,
+.align-c {
+	align-items: center;
+}
+.m-a-x,
+.margin-auto-x {
 	margin: 0 auto;
 }
+.m-a-y,
+.margin-auto-y {
+	margin: auto 0;
+}
+.m-a,
 .margin-auto {
 	margin: auto;
 }
 
 /*---TEXT---*/
+.t-l,
 .txt-l,
 .text-left {
 	text-align: left;
 }
+.t-c,
 .txt-c,
 .text-center {
 	text-align: center;
 }
+.t-r,
 .txt-r,
 .text-right {
 	text-align: right;
 }
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
 
-/*---ELEMENT STYLING---*/
+/*---EASTER EGGS---*/
+.rage:hover {
+	animation: shake 1s ease;
+	animation-iteration-count: infinite;
+}
+
+/*---DEFAULT ELEMENT STYLING---*/
 body {
 	background-color: var(--background);
 }
@@ -93,7 +166,6 @@ hr {
 	border: 0;
 	height: 1px;
 	background: var(--element-background);
-	margin: 0.5em 0;
 }
 img {
 	user-select: none;
@@ -116,4 +188,56 @@ button {
 /*---SELECTORS---*/
 button:active {
 	background-color: var(--element-background-hover);
+}
+
+/*---MOUSE---*/
+.pointer-on,
+.pointer {
+	cursor: pointer;
+}
+.pointer-off {
+	cursor: auto;
+}
+.selectable,
+.selectable-on {
+	user-select: auto;
+}
+.selectable-off {
+	user-select: none;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
 }
