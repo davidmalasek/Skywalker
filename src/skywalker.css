@@ -6,156 +6,24 @@ Inter font by Rasmus Andersson
 Licensed under the Open Font License.
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
-/* prettier-ignore */
-/*
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,hr,p,
-blockquote,pre,a,abbr,acronym,address,big,button,cite,code,del,dfn,
-em,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,
-b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
-details,embed,figure,figcaption,footer,header,hgroup,menu,nav,
-output,ruby,section,summary,time,mark,audio,video {
-	margin-block-start: 0;
-    margin-block-end: 0;
-	margin: 0;
-    padding: 0;
-    outline: 0;
-	border: 0;
-    vertical-align: baseline;
-}
-*/
 
 :root {
 	--background: #ffffff;
 	--element-background: #333333;
 	--element-background-hover: #444444;
-	--text-color: #000000;
+	--text-1: #000000;
+	--text-2: #ffffff;
 }
-
 * {
+	color: var(--text-1);
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
 	font-family: "Inter", sans-serif;
 	box-sizing: border-box;
-	color: var(--text-color);
 }
-
-/*---OPTIONS---*/
-.h-s::-webkit-scrollbar,
-.hide-sb::-webkit-scrollbar,
-.hide-scrollbar::-webkit-scrollbar {
-	display: none;
-}
-
-/*---DISPLAY PROPERTIES---*/
-.f,
-.flex {
-	display: flex;
-}
-.b,
-.block {
-	display: block;
-}
-.i,
-.inline-block {
-	display: inline-block;
-}
-.n,
-.none {
-	display: none;
-}
-
-/*---FLEX DIRECTIONS---*/
-.row,
-.r {
-	flex-direction: row;
-}
-.c,
-.col,
-.column {
-	flex-direction: column;
-}
-.w,
-.wrap {
-	flex-wrap: wrap;
-}
-.nw,
-.nowrap {
-	flex-wrap: nowrap;
-}
-
-/*---ALIGN---*/
-.j-c,
-.justify-c,
-.justify-center {
-	justify-content: center;
-}
-.j-b,
-.justify-b,
-.justify-between {
-	justify-content: space-between;
-}
-.j-a,
-.justify-a,
-.justify-around {
-	justify-content: space-around;
-}
-.a-s,
-.align-start,
-.align-s {
-	align-items: flex-start;
-}
-.a-e,
-.align-end,
-.align-e {
-	align-items: flex-end;
-}
-.a-c,
-.align-center,
-.align-c {
-	align-items: center;
-}
-.m-a-x,
-.margin-auto-x {
-	margin: 0 auto;
-}
-.m-a-y,
-.margin-auto-y {
-	margin: auto 0;
-}
-.m-a,
-.margin-auto {
-	margin: auto;
-}
-
-/*---TEXT---*/
-.t-l,
-.txt-l,
-.text-left {
-	text-align: left;
-}
-.t-c,
-.txt-c,
-.text-center {
-	text-align: center;
-}
-.t-r,
-.txt-r,
-.text-right {
-	text-align: right;
-}
-.bold {
-	font-weight: bold;
-}
-.italic {
-	font-style: italic;
-}
-.underline {
-	text-decoration: underline;
-}
-
-/*---EASTER EGGS---*/
-.rage:hover {
-	animation: shake 1s ease;
-	animation-iteration-count: infinite;
+*:not(sub, sup) {
+	vertical-align: baseline;
 }
 
 /*---DEFAULT ELEMENT STYLING---*/
@@ -163,9 +31,22 @@ body {
 	background-color: var(--background);
 }
 hr {
+	color: var(--element-background);
 	border: 0;
-	height: 1px;
-	background: var(--element-background);
+	border-top: 2px;
+	border-style: solid;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0.5em 0;
+}
+hr,
+button {
+	margin: 1rem 0;
 }
 img {
 	user-select: none;
@@ -173,13 +54,17 @@ img {
 a {
 	text-decoration: none;
 }
+ul {
+	padding-left: 1rem;
+}
 button {
+	color: var(--text-2);
 	background-color: var(--element-background);
 	font-size: 1em;
 	padding: 10px 15px;
 	font-weight: 700;
+	border: 0;
 	border-radius: 10px;
-	color: #fff;
 	text-align: center;
 	cursor: pointer;
 	user-select: none;
@@ -189,20 +74,149 @@ button {
 button:active {
 	background-color: var(--element-background-hover);
 }
+button:focus {
+	outline: 0;
+}
+
+/*---OPTIONS---*/
+.h-s::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/*---DISPLAY PROPERTIES---*/
+.d_f,
+.display_flex {
+	display: flex;
+}
+.d_b,
+.display_block {
+	display: block;
+}
+.d_i-b,
+.display_inline-block {
+	display: inline-block;
+}
+.d_n,
+.display_none {
+	display: none;
+}
+
+/*---FLEX DIRECTIONS---*/
+.f-d_r,
+.flex-direction_row {
+	flex-direction: row;
+}
+.f-d_c,
+.flex-direction_column {
+	flex-direction: column;
+}
+.f-w_w,
+.flex-wrap_wrap {
+	flex-wrap: wrap;
+}
+.f-w_nw,
+.flex-wrap_nowrap {
+	flex-wrap: nowrap;
+}
+
+/*---ALIGN---*/
+.j-c_c,
+.justify-content_center {
+	justify-content: center;
+}
+.j-c_s-b,
+.justify-content_space-between {
+	justify-content: space-between;
+}
+.j-c_s-a,
+.justify-content_space-around {
+	justify-content: space-around;
+}
+.a-i_f-s,
+.align-items_flex-start {
+	align-items: flex-start;
+}
+.a-i_f-e,
+.align-items_flex-end {
+	align-items: flex-end;
+}
+.a-i_c,
+.align-items_center {
+	align-items: center;
+}
+.m_a-x,
+.margin_auto-x {
+	margin: 0 auto;
+}
+.m_a-y,
+.margin_auto-y {
+	margin: auto 0;
+}
+.m_a,
+.margin_auto {
+	margin: auto;
+}
+
+/*---TEXT---*/
+.t-a_l,
+.text-align_left {
+	text-align: left;
+}
+.t-a_c,
+.text-align_center {
+	text-align: center;
+}
+.t-a_r,
+.text-align_right {
+	text-align: right;
+}
+.f-w_b,
+.font-weight_bold {
+	font-weight: bold;
+}
+.f-w_i,
+.font-weight_italic {
+	font-style: italic;
+}
+.t-d_u,
+.text-decoration_underline {
+	text-decoration: underline;
+}
+.t-t_u,
+.text-transform_upper {
+	text-transform: uppercase;
+}
+.t-t_l,
+.text_transform_lower {
+	text-transform: lowercase;
+}
+.t-t_c,
+.text-transform_capital {
+	text-transform: capitalize;
+}
+
+/*---EASTER EGGS---*/
+.rage:hover {
+	animation: shake 1s ease;
+	animation-iteration-count: infinite;
+}
 
 /*---MOUSE---*/
-.pointer-on,
-.pointer {
+.c_p,
+.cursor_pointer {
 	cursor: pointer;
 }
-.pointer-off {
+.c_a,
+.cursor_auto {
 	cursor: auto;
 }
-.selectable,
-.selectable-on {
+.u-s_a,
+.user-select_auto {
 	user-select: auto;
 }
-.selectable-off {
+.u-s_n,
+.user-select_none {
 	user-select: none;
 }
 

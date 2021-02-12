@@ -4,15 +4,14 @@ Skywalker is a highly customizable CSS library that makes it easier to build awe
 
 **How it's done normally:**
 
-```css
-.wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-```
-
 ```html
+<style>
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
 <div class="wrapper">
 	<button>Show more</button>
 </div>
@@ -21,7 +20,8 @@ Skywalker is a highly customizable CSS library that makes it easier to build awe
 **How it's done with Skywalker:**
 
 ```html
-<div class="flex justify-center align-center">
+<div class="display_flex justify-content_center align-items_center">
+	<!--<div class="d_f j-c_c a-i_c">-->
 	<button>Show more</button>
 </div>
 ```
@@ -30,65 +30,69 @@ Do more with less code! Skywalker is built to help you stay focused on writing y
 
 ## Display
 
-|  Full version   | Versions |          Result          |
-| :-------------: | :------: | :----------------------: |
-|    `.block`     |   `.b`   |    `display: block;`     |
-| `.inline-block` |   `.i`   | `display: inline-block;` |
-|     `.flex`     |   `.f`   |     `display: flex;`     |
-|     `.none`     |   `.n`   |     `display: none;`     |
+|       Class name        | Shortcut |          Result          |
+| :---------------------: | :------: | :----------------------: |
+| `.display_inline-block` | `.d_i-b` | `display: inline-block;` |
+|    `.display_block`     |  `.d_b`  |    `display: block;`     |
+|     `.display_flex`     |  `.d_f`  |     `display: flex;`     |
+|     `.display_none`     |  `.d_n`  |     `display: none;`     |
 
 ## Flexbox
 
-|    Full version    |       Versions       |              Result               |
-| :----------------: | :------------------: | :-------------------------------: |
-|     `.column`      |     `.col`, `.c`     |     `flex-direction: column;`     |
-|       `.row`       |         `.r`         |      `flex-direction: row;`       |
-|      `.wrap`       |         `.w`         |        `flex-wrap: wrap;`         |
-|     `.nowrap`      |        `.nw`         |       `flex-wrap: nowrap;`        |
-| `.justify-center`  | `.justify-c`, `.j-c` |    `justify-content: center;`     |
-| `.justify-between` | `.justify-b`, `.j-b` | `justify-content: space-between;` |
-| `.justify-around`  | `.justify-a`, `.j-a` | `justify-content: space-around;`  |
-|   `.align-start`   |  `.align-s`, `.a-s`  |    `align-items: flex-start;`     |
-|    `.align-end`    |  `.align-e`, `.a-e`  |     `align-items: flex-end;`      |
-|  `.align-center`   |  `.align-c`, `.a-c`  |      `align-items: center;`       |
+|            Class name            |  Shortcut  |              Result               |
+| :------------------------------: | :--------: | :-------------------------------: |
+|      `.flex-direction_row`       |  `.f-d_r`  |      `flex-direction: row;`       |
+|     `.flex-direction_column`     | `.f-d_col` |     `flex-direction: column;`     |
+|        `.flex-wrap_wrap`         |  `.f-w_w`  |        `flex-wrap: wrap;`         |
+|       `.flex-wrap_nowrap`        | `.f-w_nw`  |       `flex-wrap: nowrap;`        |
+|    `.justify-content_center`     |  `.j-c_c`  |    `justify-content: center;`     |
+| `.justify-content_space-around`  | `.j-c_s-a` | `justify-content: space-around;`  |
+| `.justify-content_space-between` | `.j-c_s-b` | `justify-content: space-between;` |
+|      `.align-items_center`       |  `.a-i_c`  |      `align-items: center;`       |
+|       `.align-items_start`       |  `.a-i_s`  |    `align-items: flex-start;`     |
+|        `.align-items_end`        |  `.a-i_e`  |     `align-items: flex-end;`      |
 
 ## Margin
 
-|   Full version   | Versions |      Result       |
+|    Class name    | Shortcut |      Result       |
 | :--------------: | :------: | :---------------: |
-| `.margin-auto-x` | `.m-a-x` | `margin: 0 auto;` |
-| `.margin-auto-y` | `.m-a-y` | `margin: auto 0;` |
-|  `.margin-auto`  |  `.m-a`  |  `margin: auto;`  |
+| `.margin_auto-x` | `.m_a-x` | `margin: 0 auto;` |
+| `.margin_auto-y` | `.m_a-y` | `margin: auto 0;` |
+|  `.margin_auto`  |  `.m_a`  |  `margin: auto;`  |
 
-## Text styling
+## Text
 
-|  Full version  |     Versions     |            Result             |
-| :------------: | :--------------: | :---------------------------: |
-|  `.text-left`  | `.txt-l`, `.t-l` |      `text-align: left;`      |
-| `.text-center` | `.txt-c`, `.t-c` |     `text-align: center;`     |
-| `.text-right`  | `.txt-r`, `.t-r` |     `text-align: right;`      |
-|    `.bold `    |        -         |     `font-weight: bold;`      |
-|  `.underline`  |        -         | `text-decoration: underline;` |
+|          Class name          | Shortcut |            Result             |
+| :--------------------------: | :------: | :---------------------------: |
+|      `.text-align_left`      | `.t-a_l` |      `text-align: left;`      |
+|     `.text-align_center`     | `.t-a_c` |     `text-align: center;`     |
+|     `.text-align_right`      | `.t-a_r` |     `text-align: right;`      |
+|     `.font-weight_bold`      | `.f-w_b` |     `font-weight: bold;`      |
+| `.text-decoration_underline` | `.t-d_u` | `text-decoration: underline;` |
 
 ## Mouse
 
-|   Full version    |     Versions     |        Result        |
-| :---------------: | :--------------: | :------------------: |
-|    `.pointer`     |  `.pointer-on`   |  `cursor: pointer;`  |
-|  `.pointer-off`   |        -         |   `cursor: auto;`    |
-|   `.selectable`   | `.selectable-on` | `user-select: auto;` |
-| `.selectable-off` |        -         | `user-select: none;` |
+|     Class name     | Shortcut |        Result        |
+| :----------------: | :------: | :------------------: |
+| `.cursor_pointer`  |  `.c_p`  |  `cursor: pointer;`  |
+|   `.cursor_auto`   |  `.c_a`  |   `cursor: auto;`    |
+| `user-select_auto` | `.u-s_a` | `user-select: auto;` |
+| `user-select_none` | `.u-s_n` | `user-select: none;` |
 
-## Bonuses
+## You might also need
 
-|   Full version    |      Versions      |               Result               |
+|    Class name     |      Shortcut      |               Result               |
 | :---------------: | :----------------: | :--------------------------------: |
 | `.hide-scrollbar` | `.h-s`, `.hide-sb` |         _hides scrollbar_          |
 |      `.rage`      |         -          | _performs shaking effect on hover_ |
 
-## Choose your Skywalker
+## Versions
 
-Are you a perfectionist and want to start from scratch? Choose `dist/skywalker-fresh.min.css`. Otherwise choose `dist/skywalker.min.css`. The `-fresh` one removes default settings from every element.
+See list of every change made [here](VERSIONS.md).
+
+## Notes
+
+At this point the library is still under development and there is still a lot to cover. However, I believe that Skywalker can save you a lots of time that you can spend by procrastinating or debugging Javascript 😘.
 
 ## Contribution
 
