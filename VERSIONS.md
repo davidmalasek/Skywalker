@@ -1,5 +1,13 @@
 # Versions
 
+## 1.3.
+
+- renamed `hide-scrollbar` and `h-s` to `hide_scrollbar` and `h_s`
+- completely removed margin classes
+- added missing classes to [README.md](README.md)
+- added `a` tag styling on hover
+- bug fixes (fixed incorrect naming)
+
 ## 1.2.
 
 - this document has been added to keep track of every change made

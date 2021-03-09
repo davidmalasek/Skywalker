@@ -71,6 +71,9 @@ button {
 }
 
 /*---SELECTORS---*/
+a:hover {
+	text-decoration: underline;
+}
 button:active {
 	background-color: var(--element-background-hover);
 }
@@ -79,8 +82,8 @@ button:focus {
 }
 
 /*---OPTIONS---*/
-.h-s::-webkit-scrollbar,
-.hide-scrollbar::-webkit-scrollbar {
+.h_s::-webkit-scrollbar,
+.hide_scrollbar::-webkit-scrollbar {
 	display: none;
 }
 
@@ -115,7 +118,7 @@ button:focus {
 .flex-wrap_wrap {
 	flex-wrap: wrap;
 }
-.f-w_nw,
+.f-w_n,
 .flex-wrap_nowrap {
 	flex-wrap: nowrap;
 }
@@ -133,6 +136,10 @@ button:focus {
 .justify-content_space-around {
 	justify-content: space-around;
 }
+.a-i_c,
+.align-items_center {
+	align-items: center;
+}
 .a-i_f-s,
 .align-items_flex-start {
 	align-items: flex-start;
@@ -140,22 +147,6 @@ button:focus {
 .a-i_f-e,
 .align-items_flex-end {
 	align-items: flex-end;
-}
-.a-i_c,
-.align-items_center {
-	align-items: center;
-}
-.m_a-x,
-.margin_auto-x {
-	margin: 0 auto;
-}
-.m_a-y,
-.margin_auto-y {
-	margin: auto 0;
-}
-.m_a,
-.margin_auto {
-	margin: auto;
 }
 
 /*---TEXT---*/
@@ -175,8 +166,8 @@ button:focus {
 .font-weight_bold {
 	font-weight: bold;
 }
-.f-w_i,
-.font-weight_italic {
+.f-s_i,
+.font-style_italic {
 	font-style: italic;
 }
 .t-d_u,
@@ -184,15 +175,15 @@ button:focus {
 	text-decoration: underline;
 }
 .t-t_u,
-.text-transform_upper {
+.text-transform_uppercase {
 	text-transform: uppercase;
 }
 .t-t_l,
-.text_transform_lower {
+.text-transform_lowercase {
 	text-transform: lowercase;
 }
 .t-t_c,
-.text-transform_capital {
+.text-transform_capitalize {
 	text-transform: capitalize;
 }
 
