@@ -1,0 +1,135 @@
+/*!
+Skywalker by David Malášek
+https://github.com/davidmalasek/Skywalker
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	color: #24292e;
+	font-family: "Inter", sans-serif;
+}
+
+/*---OPTIONS---*/
+.h_s::-webkit-scrollbar,
+.hide_scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/*---DISPLAY PROPERTIES---*/
+.d_f,
+.display_flex {
+	display: flex;
+}
+.d_b,
+.display_block {
+	display: block;
+}
+.d_i-b,
+.display_inline-block {
+	display: inline-block;
+}
+.d_n,
+.display_none {
+	display: none;
+}
+
+/*---FLEX DIRECTIONS---*/
+.f-d_r,
+.flex-direction_row {
+	flex-direction: row;
+}
+.f-d_c,
+.flex-direction_column {
+	flex-direction: column;
+}
+.f-w_w,
+.flex-wrap_wrap {
+	flex-wrap: wrap;
+}
+.f-w_n,
+.flex-wrap_nowrap {
+	flex-wrap: nowrap;
+}
+
+/*---ALIGN---*/
+.j-c_c,
+.justify-content_center {
+	justify-content: center;
+}
+.j-c_s-b,
+.justify-content_space-between {
+	justify-content: space-between;
+}
+.j-c_s-a,
+.justify-content_space-around {
+	justify-content: space-around;
+}
+.a-i_c,
+.align-items_center {
+	align-items: center;
+}
+.a-i_f-s,
+.align-items_flex-start {
+	align-items: flex-start;
+}
+.a-i_f-e,
+.align-items_flex-end {
+	align-items: flex-end;
+}
+
+/*---TEXT---*/
+.t-a_l,
+.text-align_left {
+	text-align: left;
+}
+.t-a_c,
+.text-align_center {
+	text-align: center;
+}
+.t-a_r,
+.text-align_right {
+	text-align: right;
+}
+.f-w_b,
+.font-weight_bold {
+	font-weight: bold;
+}
+.f-s_i,
+.font-style_italic {
+	font-style: italic;
+}
+.t-d_u,
+.text-decoration_underline {
+	text-decoration: underline;
+}
+.t-t_u,
+.text-transform_uppercase {
+	text-transform: uppercase;
+}
+.t-t_l,
+.text-transform_lowercase {
+	text-transform: lowercase;
+}
+.t-t_c,
+.text-transform_capitalize {
+	text-transform: capitalize;
+}
+
+/*---MOUSE---*/
+.c_p,
+.cursor_pointer {
+	cursor: pointer;
+}
+.c_a,
+.cursor_auto {
+	cursor: auto;
+}
+.u-s_a,
+.user-select_auto {
+	user-select: auto;
+}
+.u-s_n,
+.user-select_none {
+	user-select: none;
+}

@@ -1,2 +1,4 @@
 .prettierignore
-test/
+test
+node_modules
+dist/index.js
