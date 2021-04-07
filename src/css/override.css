@@ -1,0 +1,19 @@
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+	letter-spacing: -0.035em;
+	font-weight: 600;
+}
+
+.btn {
+	border-radius: 10px;
+}
