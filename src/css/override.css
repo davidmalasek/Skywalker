@@ -11,9 +11,10 @@ h2,
 h1,
 .h1 {
 	letter-spacing: -0.035em;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .btn {
 	border-radius: 10px;
+	font-weight: 600;
 }
