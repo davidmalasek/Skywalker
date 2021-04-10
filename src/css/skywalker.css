@@ -91,6 +91,42 @@ https://github.com/davidmalasek/Skywalker
 .text-align_right {
 	text-align: right;
 }
+.f-w_100,
+.font-weight_100 {
+	font-weight: 100;
+}
+.f-w_200,
+.font-weight_200 {
+	font-weight: 200;
+}
+.f-w_300,
+.font-weight_300 {
+	font-weight: 300;
+}
+.f-w_400,
+.font-weight_400 {
+	font-weight: 400;
+}
+.f-w_500,
+.font-weight_500 {
+	font-weight: 500;
+}
+.f-w_600,
+.font-weight_600 {
+	font-weight: 600;
+}
+.f-w_700,
+.font-weight_700 {
+	font-weight: 700;
+}
+.f-w_800,
+.font-weight_800 {
+	font-weight: 800;
+}
+.f-w_900,
+.font-weight_900 {
+	font-weight: 900;
+}
 .f-w_b,
 .font-weight_bold {
 	font-weight: bold;
@@ -98,6 +134,10 @@ https://github.com/davidmalasek/Skywalker
 .f-s_i,
 .font-style_italic {
 	font-style: italic;
+}
+.t-d_n,
+.text-decoration_none {
+	text-decoration: none;
 }
 .t-d_u,
 .text-decoration_underline {

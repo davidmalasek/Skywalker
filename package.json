@@ -12,10 +12,13 @@
 	"author": "David Malášek",
 	"license": "MIT",
 	"devDependencies": {
+		"autoprefixer": "^10.2.5",
 		"clean-webpack-plugin": "^3.0.0",
 		"css-loader": "^5.2.0",
 		"mini-css-extract-plugin": "^1.4.0",
 		"optimize-css-assets-webpack-plugin": "^5.0.4",
+		"postcss": "^8.2.9",
+		"postcss-loader": "^5.2.0",
 		"webpack": "^5.30.0",
 		"webpack-cli": "^4.6.0",
 		"webpack-merge": "^5.7.3"
