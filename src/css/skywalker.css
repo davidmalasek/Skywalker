@@ -78,6 +78,24 @@ https://github.com/davidmalasek/Skywalker
 	align-items: flex-end;
 }
 
+/*---LAYOUT---*/
+.p_r,
+.position_relative {
+	position: relative;
+}
+.p_f,
+.position_fixed {
+	position: fixed;
+}
+.p_a,
+.position_absolute {
+	position: absolute;
+}
+.p_s,
+.position_sticky {
+	position: sticky;
+}
+
 /*---TEXT---*/
 .t-a_l,
 .text-align_left {
@@ -172,4 +190,11 @@ https://github.com/davidmalasek/Skywalker
 .u-s_n,
 .user-select_none {
 	user-select: none;
+}
+
+/*---FLAGS---*/
+.--flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
