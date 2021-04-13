@@ -268,87 +268,87 @@ https://github.com/davidmalasek/Skywalker
 }
 
 /*---MIN-HEIGHT---*/
-.min-h_10vw,
-.min-height_10vw {
-	min-height: 10vw;
+.min-h_10vh,
+.min-height_10vh {
+	min-height: 10vh;
 }
-.min-h_20vw,
-.min-height_20vw {
-	min-height: 20vw;
+.min-h_20vh,
+.min-height_20vh {
+	min-height: 20vh;
 }
-.min-h_30vw,
-.min-height_30vw {
-	min-height: 30vw;
+.min-h_30vh,
+.min-height_30vh {
+	min-height: 30vh;
 }
-.min-h_40vw,
-.min-height_40vw {
-	min-height: 40vw;
+.min-h_40vh,
+.min-height_40vh {
+	min-height: 40vh;
 }
-.min-h_50vw,
-.min-height_50vw {
-	min-height: 50vw;
+.min-h_50vh,
+.min-height_50vh {
+	min-height: 50vh;
 }
-.min-h_60vw,
-.min-height_60vw {
-	min-height: 60vw;
+.min-h_60vh,
+.min-height_60vh {
+	min-height: 60vh;
 }
-.min-h_70vw,
-.min-height_70vw {
-	min-height: 70vw;
+.min-h_70vh,
+.min-height_70vh {
+	min-height: 70vh;
 }
-.min-h_80vw,
-.min-height_80vw {
-	min-height: 80vw;
+.min-h_80vh,
+.min-height_80vh {
+	min-height: 80vh;
 }
-.min-h_90vw,
-.min-height_90vw {
-	min-height: 90vw;
+.min-h_90vh,
+.min-height_90vh {
+	min-height: 90vh;
 }
-.min-h_100vw,
-.min-height_100vw {
-	min-height: 100vw;
+.min-h_100vh,
+.min-height_100vh {
+	min-height: 100vh;
 }
 
 /*---MAX-HEIGHT---*/
-.max-h_10vw,
-.max-height_10vw {
-	max-height: 10vw;
+.max-h_10vh,
+.max-height_10vh {
+	max-height: 10vh;
 }
-.max-h_20vw,
-.max-height_20vw {
-	max-height: 20vw;
+.max-h_20vh,
+.max-height_20vh {
+	max-height: 20vh;
 }
-.max-h_30vw,
-.max-height_30vw {
-	max-height: 30vw;
+.max-h_30vh,
+.max-height_30vh {
+	max-height: 30vh;
 }
-.max-h_40vw,
-.max-height_40vw {
-	max-height: 40vw;
+.max-h_40vh,
+.max-height_40vh {
+	max-height: 40vh;
 }
-.max-h_50vw,
-.max-height_50vw {
-	max-height: 50vw;
+.max-h_50vh,
+.max-height_50vh {
+	max-height: 50vh;
 }
-.max-h_60vw,
-.max-height_60vw {
-	max-height: 60vw;
+.max-h_60vh,
+.max-height_60vh {
+	max-height: 60vh;
 }
-.max-h_70vw,
-.max-height_70vw {
-	max-height: 70vw;
+.max-h_70vh,
+.max-height_70vh {
+	max-height: 70vh;
 }
-.max-h_80vw,
-.max-height_80vw {
-	max-height: 80vw;
+.max-h_80vh,
+.max-height_80vh {
+	max-height: 80vh;
 }
-.max-h_90vw,
-.max-height_90vw {
-	max-height: 90vw;
+.max-h_90vh,
+.max-height_90vh {
+	max-height: 90vh;
 }
-.max-h_100vw,
-.max-height_100vw {
-	max-height: 100vw;
+.max-h_100vh,
+.max-height_100vh {
+	max-height: 100vh;
 }
 
 /*---TEXT---*/
@@ -363,6 +363,10 @@ https://github.com/davidmalasek/Skywalker
 .t-a_r,
 .text-align_right {
 	text-align: right;
+}
+.t-a_j,
+.text-align_justify {
+	text-align: justify;
 }
 .f-w_100,
 .font-weight_100 {
