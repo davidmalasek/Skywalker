@@ -450,6 +450,14 @@ https://github.com/davidmalasek/Skywalker
 .user-select_none {
 	user-select: none;
 }
+.p-e_a,
+.pointer-events_auto {
+	pointer-events: auto;
+}
+.p-e_n,
+.pointer-events_none {
+	pointer-events: none;
+}
 
 /*---SKYWALKER CLASSES---*/
 .sw_f,
@@ -467,6 +475,10 @@ https://github.com/davidmalasek/Skywalker
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.sw_hr {
+	margin: 1rem 0;
+	border-bottom: 1px solid #e1e4e8;
 }
 .sw_c,
 .sw_container {
