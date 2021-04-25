@@ -1,0 +1,30 @@
+/*!
+Themes for Skywalker by David Malášek
+Licensed under the MIT License
+https://github.com/davidmalasek/Skywalker
+*/
+
+body.sw_dark-theme,
+body.sw_d-t {
+	color: #dedad6; /*og: #212529*/
+	background-color: #000; /*og: #fff*/
+}
+
+body.sw_dark-theme,
+body.sw_d-t mark,
+.mark {
+	color: #fff !important; /*added*/
+	background-color: #212529 !important; /*og: #fcf8e3*/
+}
+
+body.sw_dark-theme,
+body.sw_d-t .card {
+	background-color: #000; /*og: #fff*/
+	border: 1px solid #ffffdf; /*og: #00000020*/
+}
+
+body.sw_dark-theme,
+body.sw_d-t .tooltip-inner {
+	color: #fff; /*og: #fff*/
+	background-color: #212529; /*og: #000*/
+}
