@@ -1,7 +1,7 @@
 /*!
 Themes for Skywalker by David Malášek
 Licensed under the MIT License
-https://github.com/davidmalasek/Skywalker
+https://github.com/davidmalasek/skywalker
 */
 
 body.sw_dark-theme,
@@ -27,4 +27,9 @@ body.sw_dark-theme,
 body.sw_d-t .tooltip-inner {
 	color: #fff; /*og: #fff*/
 	background-color: #212529; /*og: #000*/
+}
+
+body.sw_dark-theme,
+body.sw_d-t .table {
+	color: #dedad6; /*og: #212529*/
 }
