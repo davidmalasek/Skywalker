@@ -11,7 +11,7 @@ https://github.com/davidmalasek/skywalker
 Themes for Skywalker by David Malášek
 Licensed under the MIT License
 https://github.com/davidmalasek/skywalker
-*/body.sw_d-t,body.sw_dark-theme{color:#dedad6;background-color:#000}.mark,body.sw_d-t mark,body.sw_dark-theme{color:#fff!important;background-color:#212529!important}body.sw_d-t .card,body.sw_dark-theme{background-color:#000;border:1px solid #ffffdf}body.sw_d-t .tooltip-inner,body.sw_dark-theme{color:#fff;background-color:#212529}body.sw_d-t .table,body.sw_dark-theme{color:#dedad6}
+*/body.sw_d-t,body.sw_dark-theme{color:#dedad6;background-color:#000}.mark,body.sw_d-t,body.sw_dark-theme mark{color:#fff!important;background-color:#212529!important}body.sw_d-t,body.sw_dark-theme .card{background-color:#000;border:1px solid #ffffdf}body.sw_d-t,body.sw_dark-theme .tooltip-inner{color:#fff;background-color:#212529}body.sw_d-t,body.sw_dark-theme .table{color:#dedad6}
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
