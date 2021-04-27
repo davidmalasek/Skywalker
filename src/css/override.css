@@ -19,7 +19,9 @@ h1,
 }
 
 .btn {
-	font-weight: 600;
+	font-weight: 500;
+	font-size: 17px;
+	letter-spacing: -0.022em;
 }
 
 ul {
@@ -45,6 +47,11 @@ a:hover {
 
 a.btn {
 	text-decoration: none;
+}
+
+code {
+	font-size: 1rem;
+	padding: 0.2rem 0.4rem;
 }
 
 kbd,
@@ -86,5 +93,5 @@ kbd,
 .modal-content,
 .tooltip-inner,
 .popover {
-	border-radius: 10px;
+	border-radius: 8px;
 }
