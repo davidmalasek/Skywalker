@@ -1,5 +1,5 @@
-import "./css/normalize.css";
-import "./css/bootstrap.css";
-import "./css/skywalker.css";
+import "./css/vendor/normalize.css";
+import "./css/vendor/bootstrap.css";
+import "./css/skywalker.scss";
 import "./css/skywalker-themes.scss";
-import "./css/override.css";
+import "./css/overrides.css";
