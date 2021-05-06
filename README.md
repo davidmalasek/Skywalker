@@ -26,7 +26,7 @@ Switch between themes by just adding `.sw_dark-theme` (or just `.sw_d-t`) class.
 
 Sometimes the class cannot be shortened completely, for example `.position_static` and `.position_sticky` will both result into ~~`.p_s`~~. In that case, the matching parts will remain untouched and everything else will be shortened. So the example above will result into `.p_static` and `.p_sticky`.
 
-Are you already using shortcuts and cannot remember what some of them stand for? Don't worry. You can either look up the [documentation](DOCS.md) or open up the Developer Tools in your browser and inspect the element with the unknown shortcut. There will be most likely displayed the full name besides the shortcut in the styles panel.
+Are you already using shortcuts and cannot remember what some of them stand for? Don't worry. You can open up the Developer Tools in your browser and inspect the element with the unknown shortcut. There will be most likely displayed the full name next to the shortcut in the styles panel.
 
 ### Overrides
 
