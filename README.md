@@ -32,11 +32,11 @@ Are you already using shortcuts and cannot remember what some of them stand for?
 
 Skywalker is slightly overriding some settings set by either Bootstrap or normalize.css. Mainly, the [Inter Font Family](https://github.com/rsms/inter/) is used instead of **Native font stack** set by Bootstrap.
 
-## Documentation
+## Documentation 📚
 
 If you want to try out Skywalker in your project, go ahead and download the minifed file in the `/dist` directory. The documentation is available [here](DOCS.md).
 
-## License
+## License 📜
 
 Project is licensed under the [MIT License](LICENSE).
 
