@@ -20,6 +20,10 @@ _Please see additional information about Shortcuts down below._
 
 Switch between themes by just adding `.sw_dark-theme` (or just `.sw_d-t`) class. This feature is currently under development and is not fully stable.
 
+### Browser compatibility
+
+Skywalker is compiled using [PostCSS](https://github.com/postcss/postcss)'s [autoprefixer](https://github.com/postcss/autoprefixer) plugin, which adds vendor prefixes to CSS rules.
+
 ## Additional information 📄
 
 ### Shortcuts

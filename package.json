@@ -1,7 +1,7 @@
 {
 	"name": "skywalker",
 	"version": "1.0.0",
-	"description": "CSS library that makes it easier to build awesome looking websites.",
+	"description": "CSS library designed to speed up website development.",
 	"main": "index.js",
 	"directories": {
 		"test": "test"
